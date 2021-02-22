@@ -105,8 +105,6 @@
 As an example, if the variable 'foo' was defined, then
 should '${f' complete to '${foo} or '${foo'. It defualts to '${foo'")
 
-  (declare-function ion-keywrods "ion-mode" ())
-  
   (defun ion-keywords ()
     "A list of all ion-shell keywords"
     (append ion-indent-forward-keywords
