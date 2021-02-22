@@ -90,7 +90,9 @@
     "ion-shell keywords that should decrease the indent")
   
   (defvar ion-indent-neutral-keywords
-    '("alias" "and" "bg" "break" "calc" "case" "cd" "complete"
+    '("alias" "and" "bg" "bool" "math" "cd" "contains" "dirs" "dir-depth"
+      "break" "calc" "case" "cd" "complete" "ends-with" "exists" "eq" "is"
+      "isatty" "random" "starts-with" "which" "type" "export"
       "continue" "count" "dirs" "disown" "drop" "echo" "else"
       "eval" "exec" "exit" "false" "fg" "help"
       "history" "in" "jobs" "let" "match" "matches" "mkdir"
