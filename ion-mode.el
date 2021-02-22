@@ -158,10 +158,12 @@ should '${f' complete to '${foo} or '${foo'. It defualts to '${foo'")
   (set-syntax-table ion-mode-syntax-table)
   
   (defvar ion-highlights
-    (list (cons (regexp-opt
-		 (ion-keywords)
-		 'symbolss)
-		font-lock-keyword-face))
+    (list (cons
+           (concat
+            (rx symbol-start)
+            (regexp-opt (ion-keywords) t)
+            (rx symbol-end))
+	   font-lock-keyword-face))
     "regexp optimal for of keywords to highlight")
 
   (declare-function ion-find-quote-variables "ion-mode" (limit regexp))
